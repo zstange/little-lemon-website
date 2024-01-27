@@ -1,0 +1,55 @@
+$primary-green: #495E57;
+$primary-yellow: #F4CE14;
+$header-font: 'Markazi Text';
+$paragraph-font: 'Karla';
+
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr 2fr auto;
+    grid-template-areas: "nav" "header" "main" "footer";
+}
+
+.nav {
+    grid-area: nav;
+    text-align: center;
+    padding: .25em;
+}
+
+.header {
+    grid-area: header;
+    background-color: $primary-green;
+    padding: 2em;
+    place-items: center;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    padding: 2em;
+    place-items: center;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: $primary-green;
+    padding: 2em;
+    place-items: center;
+    text-align: center;
+}
+
+.twelve {
+    grid-column: 1/ span 12;
+}
+
+.eight {
+    grid-column: 3/ span 8;
+}
+
+img {
+    border-radius: 16px;
+}
+

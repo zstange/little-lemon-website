@@ -1,0 +1,37 @@
+@import "../App.scss";
+
+nav {
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  li {
+    flex: auto;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: $paragraph-font;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+  }
+
+  a:hover {
+    color: $primary-green;
+  }
+
+  img {
+    width: 175px;
+  }
+
+}
+
+.menu-icon {
+  color: $primary-green;
+}
+

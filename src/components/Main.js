@@ -1,7 +1,8 @@
+import '../scss/Main.scss';
 
 function Main() {
     return(
-        <main></main>
+        <main className='main twelve'>Main</main>
     );
 }
 
