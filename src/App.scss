@@ -32,10 +32,11 @@ $paragraph-font: 'Karla';
 
 .header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: subgrid;
     background-color: $primary-green;
-    padding: 2em;
-    place-items: center;
-    text-align: center;
+    padding: 1em;
+    column-gap: 2em;
 }
 
 .main {
@@ -44,7 +45,7 @@ $paragraph-font: 'Karla';
     grid-template-columns: subgrid;
     row-gap: 1em;
     padding: 2em;
-    // place-items: center;
+    margin-top: 3em;
     text-align: center;
 }
 
@@ -53,7 +54,6 @@ $paragraph-font: 'Karla';
     display: grid;
     grid-template-columns: subgrid;
     background-color: $primary-green;
-    // padding: .25em;
     text-align: left;
 }
 
@@ -65,17 +65,40 @@ $paragraph-font: 'Karla';
     grid-column: 3/ span 8;
 }
 
+.three-span-four {
+    grid-column: 3/ span 4;
+}
+
+.seven-span-four {
+    grid-column: 7/ span 4;
+}
+
 img {
     border-radius: 16px;
+}
+
+button {
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 h1 {
     font-family: $header-font;
     font-size: 64pt;
+    font-weight: 500;
+    color: $primary-yellow;
+}
+
+h2 {
+    font-family: $header-font;
+    font-size: 40pt;
+    font-weight: 400;
+    margin-top: -.5em;
+    color: $off-white;
 }
 
 h5 {
     font-family: $header-font;
     font-size: 20pt;
 }
-

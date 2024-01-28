@@ -1,1 +1,18 @@
 @import "../App.scss";
+
+.text{
+    margin: 1em auto;
+}
+
+.image-container {
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 320px;
+        width: 320px;
+        object-fit: cover;
+        position: relative;
+    }
+}
