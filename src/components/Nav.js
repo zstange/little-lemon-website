@@ -13,12 +13,12 @@ function Nav() {
                 <ul>
                     <li><img src={logo} alt='Little Lemon Logo' /></li>
                     <li></li>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/about'>About</Link></li>
-                    <li><Link to='/menu'>Menu</Link></li>
-                    <li><Link to='/reservations'>Reservations</Link></li>
-                    <li><Link to='/order'>Ordeer Online</Link></li>
-                    <li><Link to='/login'>Login</Link></li>
+                    <li><Link className='nav-item' to='/'>Home</Link></li>
+                    <li><Link className='nav-item' to='/about'>About</Link></li>
+                    <li><Link className='nav-item' to='/menu'>Menu</Link></li>
+                    <li><Link className='nav-item' to='/reservations'>Reservations</Link></li>
+                    <li><Link className='nav-item' to='/order'>Order Online</Link></li>
+                    <li><Link className='nav-item' to='/login'>Login</Link></li>
                 </ul>
                 :
                 <ul>

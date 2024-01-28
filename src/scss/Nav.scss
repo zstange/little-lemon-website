@@ -13,7 +13,7 @@ nav {
     flex: auto;
   }
 
-  a {
+  .nav-item {
     text-decoration: none;
     font-family: $paragraph-font;
     font-weight: bold;
@@ -21,7 +21,7 @@ nav {
     color: black;
   }
 
-  a:hover {
+  .nav-item:hover {
     color: $primary-green;
   }
 

@@ -1,7 +1,44 @@
 @import "../App.scss";
 
-.section-footer {
-    @extend .section;
-    grid-column-start: 2;
-    // display: flex;
+.content {
+    grid-column: 3/ span 8;
+    padding: 1em;
+    display: flex;
+    margin: 1em;
+
+    div {
+        flex: 1;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .nav-item {
+        text-decoration: none;
+        font-family: $paragraph-font;
+        font-size: 16px;
+        color: black;
+    }
+
+    .nav-item:hover {
+        color: $primary-yellow;
+    }
+
+    img {
+        height: 200px;
+        background-color: $off-white;
+        padding: 16px;
+    }
+
+    .address {
+        margin: 2em auto;
+    }
+
+    .socials {
+        margin: 2em auto;
+    }
+
 }
