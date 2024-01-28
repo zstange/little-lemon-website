@@ -1,15 +1,21 @@
 $primary-green: #495E57;
 $primary-yellow: #F4CE14;
+$off-white: #EDEFEE;
 $header-font: 'Markazi Text';
 $paragraph-font: 'Karla';
 
 
 .container {
     display: grid;
-    min-height: 100vh;
+    min-height: 125vh;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto 1fr 2fr auto;
     grid-template-areas: "nav" "header" "main" "footer";
+}
+
+.section {
+    grid-column: 3/ span 8;
+    background-color: aqua;
 }
 
 .nav {
@@ -28,6 +34,9 @@ $paragraph-font: 'Karla';
 
 .main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: subgrid;
+    row-gap: 1em;
     padding: 2em;
     place-items: center;
     text-align: center;

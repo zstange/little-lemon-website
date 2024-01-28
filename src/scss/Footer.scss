@@ -1,1 +1,7 @@
 @import "../App.scss";
+
+.section-footer {
+    @extend .section;
+    grid-column-start: 2;
+    // display: flex;
+}

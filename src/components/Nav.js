@@ -2,6 +2,7 @@ import '../scss/Nav.scss';
 import logo from '../images/Logo_2.png';
 import { useWindowContext } from './WindowSizeContext';
 import { IoMenu } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 function Nav() {
     const {windowSize} = useWindowContext();
@@ -12,12 +13,12 @@ function Nav() {
                 <ul>
                     <li><img src={logo} alt='Little Lemon Logo' /></li>
                     <li></li>
-                    <li><a href='./'>Home</a></li>
-                    <li><a href='./about'>About</a></li>
-                    <li><a href='./menu'>Menu</a></li>
-                    <li><a href='./reservations'>Reservations</a></li>
-                    <li><a href='./order'>Order Online</a></li>
-                    <li><a href='./login'>Login</a></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/about'>About</Link></li>
+                    <li><Link to='/menu'>Menu</Link></li>
+                    <li><Link to='/reservations'>Reservations</Link></li>
+                    <li><Link to='/order'>Ordeer Online</Link></li>
+                    <li><Link to='/login'>Login</Link></li>
                 </ul>
                 :
                 <ul>
