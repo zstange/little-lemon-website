@@ -1,34 +1,50 @@
 @import "../App.scss";
 
-.chicago-container{
+.chicago-container {
     display: flex;
     padding: 2em;
-    column-gap: 10em;
+    column-gap: 4em;
+}
+
+.chicago-text {
+    margin: 1em auto;
+    height: 16em;
+    overflow-y: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;/* IE and Edge */
+    scrollbar-width: none;/* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chicago-text::-webkit-scrollbar {
+    display: none;
 }
 
 .title {
     color: black;
     font-size: 60pt;
 }
+
 .subtitle {
     color: $primary-green;
     font-size: 36pt;
 }
 
-.chicago-images{
+.chicago-images {
     flex: 1;
     display: flex;
 
-    .front-image{
+    .front-image {
         align-self: flex-end;
         margin-right: -6em;
         z-index: 1;
     }
-    .back-image{
+
+    .back-image {
         z-index: -1;
     }
 
-    img{
+    img {
         width: 300px;
         height: 300px;
         object-fit: cover;
