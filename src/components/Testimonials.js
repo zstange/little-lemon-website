@@ -3,8 +3,7 @@ import '../scss/Testimonials.scss';
 import ReviewCard from './ReviewCard';
 
 function Testimonials() {
-    const [reviews, setReviews] = useState([]);
-    let storedReviews = [
+    const [reviews, setReviews] = useState([
         {
             image: "",
             alt: "An thumbnail image of a person",
@@ -33,20 +32,21 @@ function Testimonials() {
             rating: "5/5",
             review: "\"You have to try the Greek Salad and the Lemon Dessert!\""
         },
-    ];
+    ]);
 
     useEffect(() => {
+        let reviewsCopy = [...reviews];
         fetch("https://randomuser.me/api/?results=4")
             .then((results) => {
                 return results.json();
             })
             .then((data) => {
                 data.results.forEach((person, index) => {
-                    storedReviews[index].image = person.picture.thumbnail;
-                    storedReviews[index].name = person.name.first;
+                    reviewsCopy[index].image = person.picture.thumbnail;
+                    reviewsCopy[index].name = person.name.first;
                 });
 
-                setReviews(storedReviews);
+                setReviews(reviewsCopy);
             });
     }, []);
 
@@ -55,7 +55,7 @@ function Testimonials() {
 
         reviews.forEach((review) => {
             cards.push(<ReviewCard
-                key={review.name}
+                key={review.review}
                 image={review.image}
                 alt={review.alt}
                 name={review.name}
