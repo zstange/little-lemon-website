@@ -1,1 +1,13 @@
 @import "../App.scss";
+
+.specials-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.specials-body {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}

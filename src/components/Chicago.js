@@ -1,10 +1,12 @@
 import '../scss/Chicago.scss';
 
 function Chicago() {
-    return(
-        <div className='section'>
+    return (
+        <>
+            <div className='section'>
                 Chicago
-        </div>
+            </div>
+        </>
     );
 }
 

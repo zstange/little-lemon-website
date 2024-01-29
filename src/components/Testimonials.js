@@ -2,9 +2,11 @@ import '../scss/Testimonials.scss';
 
 function Testimonials() {
     return (
-        <div className='section'>
+        <>
+            <div className='section'>
                 Testimonials
-        </div>
+            </div>
+        </>
     );
 }
 
