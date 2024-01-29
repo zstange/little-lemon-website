@@ -1,1 +1,18 @@
 @import "../App.scss";
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+
+    .testimonial-header{
+
+    }
+
+    .testimonial-body {
+        flex: 1 1;
+        display: flex;
+        justify-content: center;
+    }
+}

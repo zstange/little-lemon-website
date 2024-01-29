@@ -1,0 +1,33 @@
+@import "../App.scss";
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-green;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 16px;
+    width: 200px;
+
+    .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        color: $primary-yellow;
+        margin-right: .5em;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1em auto;
+
+        img {
+            margin-right: 1em;
+        }
+    }
+}

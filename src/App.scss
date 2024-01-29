@@ -24,6 +24,12 @@ $paragraph-font: 'Karla';
     background-color: aqua;
 }
 
+.section:nth-child(even){
+    grid-column: 1/ span 12;
+    background-color: $off-white;
+    margin:  auto -2em;
+}
+
 .nav {
     grid-area: nav;
     text-align: center;
@@ -100,6 +106,10 @@ h2 {
 h3 {
     font-size: 20pt;
     font-weight: bolder;
+}
+
+h4 {
+    font-size: 12pt;
 }
 
 h5 {

@@ -35,6 +35,7 @@ function Specials() {
 
         specials.forEach((special) => {
             cards.push(<SpecialsCard
+                key={special.name}
                 image={special.image}
                 alt={special.alt}
                 name={special.name}

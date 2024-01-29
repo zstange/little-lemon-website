@@ -1,3 +1,4 @@
+import '../scss/Specials.scss';
 import CallToAction from "./CallToAction";
 import Chicago from "./Chicago";
 import Specials from "./Specials";
