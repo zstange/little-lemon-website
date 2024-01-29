@@ -24,7 +24,7 @@ function CallToAction(props) {
                     {getButton()}
                 </div>
                 <div className='seven-span-four image-container'>
-                    <img src={props.image} alt={props.alt} />
+                    {props.image && <img src={props.image} alt={props.alt} />}
                 </div>
             </header>
         </>

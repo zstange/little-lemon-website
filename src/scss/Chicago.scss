@@ -1,1 +1,36 @@
 @import "../App.scss";
+
+.chicago-container{
+    display: flex;
+    padding: 2em;
+    column-gap: 10em;
+}
+
+.title {
+    color: black;
+    font-size: 60pt;
+}
+.subtitle {
+    color: $primary-green;
+    font-size: 36pt;
+}
+
+.chicago-images{
+    flex: 1;
+    display: flex;
+
+    .front-image{
+        align-self: flex-end;
+        margin-right: -6em;
+        z-index: 1;
+    }
+    .back-image{
+        z-index: -1;
+    }
+
+    img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+}

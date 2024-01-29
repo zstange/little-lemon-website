@@ -31,7 +31,7 @@ function Testimonials() {
             alt: "An thumbnail image of a person",
             name: "",
             rating: "5/5",
-            review: "\"You have to try to Greek Salad and the Lemon Dessert!\""
+            review: "\"You have to try the Greek Salad and the Lemon Dessert!\""
         },
     ];
 
