@@ -9,7 +9,6 @@ function CallToAction(props) {
                 text={props.button.text}
                 style={props.button.style}
                 path={props.button.path}
-                linkStyle={props.button.linkStyle}
             />
         }
     };

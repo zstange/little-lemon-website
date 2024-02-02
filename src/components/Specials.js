@@ -57,12 +57,10 @@ function Specials() {
                         text='Online Menu'
                         style={{
                             padding: '10px 20px',
-                            backgroundColor: '#F4CE14'
-                        }}
-                        path='./menu'
-                        linkStyle={{
+                            backgroundColor: '#F4CE14',
                             color: 'black'
                         }}
+                        path='./menu'
                     />
                 </div>
                 <div className='specials-body'>

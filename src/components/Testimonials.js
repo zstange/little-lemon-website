@@ -48,7 +48,7 @@ function Testimonials() {
 
                 setReviews(reviewsCopy);
             });
-    }, []);
+    },[]);
 
     const getReviews = () => {
         let cards = [];

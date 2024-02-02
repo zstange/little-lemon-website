@@ -16,12 +16,10 @@ function Homepage() {
                     text: 'Reserve a Table',
                     style: {
                         padding: '10px 20px',
-                        backgroundColor: '#F4CE14'
+                        backgroundColor: '#F4CE14',
+                        color: 'black'
                     },
                     path: './reservations',
-                    linkStyle: {
-                        color: 'black'
-                    }
                 }}
                 image={foodImage}
                 alt='Chef holding plate of bruscetta'

@@ -1,11 +1,18 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../scss/Button.scss';
 
 function Button(props) {
+    const buttonType = props.type ? props.type : "button";
+    const navigate = useNavigate();
+
     return (
         <>
-            <button type="button" style={props.style}>
-                <Link to={props.path} style={props.linkStyle} className='link'>{props.text}</Link>
+            <button
+                type={buttonType}
+                style={props.style}
+                onClick={props.onClick ? props.onClick : () => navigate(props.path)}
+            >
+                {props.text}
             </button>
         </>
     );

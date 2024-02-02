@@ -1,0 +1,31 @@
+
+form {
+    display: grid;
+    max-width: 20vw;
+    gap: 1em
+}
+
+input, select {
+    border-radius: 16px;
+    height: 2em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+
+#res-location {
+    label {
+        margin-right: 1em;
+    }
+
+    input{
+        margin-right: .5em;
+        height: auto;
+    }
+}
+
+.form-error{
+    color: red;
+    font-size: 10pt;
+    font-weight: bold;
+}
