@@ -14,7 +14,7 @@ function BookingConfirmation(props) {
             />
             <main className="main twelve">
                 <div className="section">
-                    Booking confirmed
+                    <h3>Booking confirmed!</h3>
                 </div>
             </main>
         </>

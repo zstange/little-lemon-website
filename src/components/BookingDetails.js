@@ -11,10 +11,10 @@ function BookingDetails(props) {
             date: (new Date()).toLocaleDateString("en-CA"),
             time: "",
             guests: 4,
-            occasion: "",
+            occasion: "none",
         },
         onSubmit: (values) => {
-            props.submitAPI(values);
+            props.submit(values);
         },
         validationSchema: Yup.object({
             date: Yup.date().required("Date is required"),

@@ -11,6 +11,7 @@ function Button(props) {
                 type={buttonType}
                 style={props.style}
                 onClick={props.onClick ? props.onClick : () => navigate(props.path)}
+                aria-label='On Click'
             >
                 {props.text}
             </button>
